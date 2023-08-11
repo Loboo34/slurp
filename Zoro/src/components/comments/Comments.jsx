@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 import NewestComments from "./CommetSections/NewestComments";
-import TopComments from "./CommetSections/TopComments";
+
 
 
 const Comments = () => {

@@ -1,10 +1,8 @@
 import React from 'react'
-import AnimeData from '../../AnimeData'
 
 const Related = (props) => {
 
   return (
-    
        <div>
         {props.AnimeData.map((anime) => {
             return (
@@ -46,8 +44,7 @@ const Related = (props) => {
               </div>
             );
         })}
-       </div>
-    
+       </div> 
   )
 }
 

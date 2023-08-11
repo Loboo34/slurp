@@ -1,2 +1,2 @@
 # slurp 
-# Anime watching plartform
+# Anime streaming plartform

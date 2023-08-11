@@ -66,8 +66,12 @@ const Trending = () => {
               </div>  */}
               <div className=" flex relative md:w-[260px] md:h-[380px] bg-gradient-to-t from-black to-gray-600">
                 <div className=" text-white w-2/12 relative ">
-                  <p className=" -rotate-90 absolute bottom-[50px] left-1">Naruto</p>
-                  <span className=" text-[20px] absolute bottom-1 left-5">1</span>
+                  <p className=" -rotate-90 absolute bottom-[50px] left-1">
+                    Naruto
+                  </p>
+                  <span className=" text-[20px] absolute bottom-1 left-5">
+                    1
+                  </span>
                 </div>
                 <div className=" w-10/12 ">
                   <Link to={`anime/${anime.id}`}>
@@ -77,19 +81,19 @@ const Trending = () => {
               </div>
             </SwiperSlide>
           ))}
-          <div className=" flex flex-col absolute right-0 bottom-3 z-10 max-md:hidden ">
-            <div
-              className="swiperNext-btn mr-3 mb-3 rounded-xl text-white bg-black"
+          <div className=" flex flex-col absolute right-0 top-0 bottom-3 z-10 max-md:hidden  bg-orange-500 h-full">
+            {/* <div
+              className="swiperNext-btn  mb-1 pb-10 rounded-xl text-white bg-white relative w-1/2"
               ref={swiperNavNextRef}
             >
-              <h1>next</h1>{" "}
+              <span className=" w-10"><img src="/icons/arrow_icon.png" alt="next" className=" mr-10"/></span>{" "}
             </div>
             <div
-              className="swiperPrev-btn mr-3 mb-3 rounded-xl text-white"
+              className="swiperPrev-btn mr-3 mb-3 rounded-xl text-white w-[400px] bg-black"
               ref={swiperNavPrevRef}
             >
-              <h2>prev</h2>{" "}
-            </div>
+              <span></span>{" "}
+            </div> */}
           </div>
         </Swiper>
       </div>

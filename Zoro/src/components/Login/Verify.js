@@ -39,12 +39,7 @@ const Verify = (props) => {
           <div className="text-[.7rem] flex justify-center items-center pt-[50px]">
             <p className="text-white text-[14px]">
               Dont have an account?
-              <a
-                className=" text-[14px] text-[#cae962] reg-link cursor-pointer"
-                onClick={() => props.onFormSwich("login")}
-              >
-                Back to sing-in
-              </a>
+             
             </p>
           </div>
         </form>

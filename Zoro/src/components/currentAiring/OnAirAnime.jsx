@@ -22,7 +22,7 @@ const OnAirAnime = () => {
   const swiperNavPrevRef = useRef(null);
   const truncatedData = AnimeData.slice(0, 10);
   return (
-    <div className=" relative">
+    <div className=" relative pt-0 -mt-10">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -50,7 +50,7 @@ const OnAirAnime = () => {
       >
         {truncatedData.map((anime) => (
           <SwiperSlide>
-            <div className=" relative text-white" style={{}}>
+            <div className=" relative text-white " style={{}}>
               <div className=" w-full md:h-[520px] h-[250px]">
                 {" "}
                 <img

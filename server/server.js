@@ -4,22 +4,19 @@ const animeRoutes = require("./routes/anime");
 const userRoutes = require("./routes/User");
 const mongoose = require("mongoose");
 
-
 const app = express();
 
 app.use(express.json());
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
-  next(); 
+  next();
 });
 
 //routes
 app.use("/api/anime", animeRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/admin", userRoutes);
-
-
 
 //db
 mongoose
@@ -32,4 +29,3 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
- 
