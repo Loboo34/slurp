@@ -18,6 +18,7 @@ import Sort from "./Pages/az-list/Sort";
 import Movies from "./Pages/movies/Movies";
 import TvSeries from "./Pages/Series/TvSeries";
 import Popular from "./Pages/MostV/Popular";
+import Navbar from "./components/header/NavBar";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
       <Route path="genre/:genre" element={<Genre />} />
       <Route path="AZ-list" element={<Sort />} />
       <Route path="movie" element={<Movies />} />
-      <Route path="popular" element={<Popular />} />
+      {/* <Route path="popular" element={<Popular />} /> */}
       <Route path="series" element={<TvSeries />} />
       <Route path="MostViewed" element={<MostViewed />}></Route>
     </Route>
@@ -39,9 +40,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="pl-0 pr-0 bg-[#090a0cf3] relative">
-    
+      <Navbar />
       <RouterProvider router={router} />
-      <Footer />   
+      <Footer />
     </div>
   );
 }

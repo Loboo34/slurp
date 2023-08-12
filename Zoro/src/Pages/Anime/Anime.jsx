@@ -6,8 +6,6 @@ import MoreAnime from "./MoreAnime";
 import ProInfo from "./ProInfo";
 import MostPopulor from "./MostPopulor";
 import RelatedAnime from "./RelatedAnime";
-import Header from "../../components/NavBar/NavBa";
-
 
 const Anime = () => {
 const { id } = useParams();
@@ -18,7 +16,7 @@ const anime = AnimeData.find((anime) => anime.id === parseInt(id));
   }
   return (
     <div>
-      <Header />
+     
       <div className="info">
         <div className=" flex w-full h-[700px] bg-[#1d1c1ce0] pt-10">
           <div className=" w-3/12">

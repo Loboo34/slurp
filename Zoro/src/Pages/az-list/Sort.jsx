@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../../components/NavBar/NavBa'
+
 import footerLinks from '../../components/Footer/footerLinks';
 import { Link } from 'react-router-dom';
 import Card from './Card';
@@ -8,7 +8,7 @@ import Card from './Card';
 const Sort = () => {
   return (
     <div>
-      <Header />
+   
       <div className=" flex space-x-2 pt-3 pl-4 pb-3 text-[#cae962] ">
         <Link to="/">
           <butoon className=" cursor-pointer ">Home</butoon>

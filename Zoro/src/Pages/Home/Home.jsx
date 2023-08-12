@@ -9,28 +9,24 @@ import AllGenres from "../../components/Genres/AllGenres";
 import MostViewed from "../../components/MostViewed/MostViewed";
 import TrendingPosts from "../../components/TrendingPosts/TrendingPosts";
 import OnAirAnime from "../../components/currentAiring/OnAirAnime";
-import Navbar from "../../components/header/NavBar";
+
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Home = () => {
   const { user } = useAuthContext();
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-    const toggleSidebar = () => {
-      setIsSidebarOpen(!isSidebarOpen);
-    };
+  // const toggleSidebar = () => {
+  //   setIsSidebarOpen(!isSidebarOpen);
+  // };
 
-    const closeSidebar = () => {
-      setIsSidebarOpen(false);
-    };
+  // const closeSidebar = () => {
+  //   setIsSidebarOpen(false);
+  // };
 
   return (
     <div className=" relative">
-      <Navbar
-        onSidebarToggle={toggleSidebar}
-        isSidebarOpen={isSidebarOpen}
-        closeSidebar={closeSidebar}
-      />
+    
       <div className={`content ${isSidebarOpen ? "sidebar-open" : ""}`}></div>
       <OnAirAnime />
       <Trending />
