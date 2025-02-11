@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Login from "./Login";
-import Regester from "./Regester";
+import Register from "./Regester";
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,7 +29,7 @@ const Log = ({ onClose }) => {
           currentForm === "login" ? (
             <Login onFormSwich={toggleForm} />
           ) : (
-            <Regester onFormSwich={toggleForm} />
+            <Register onFormSwich={toggleForm} />
           )
           // currentForm === "login"? <Login onFormSwich={toggleForm}/> : <Regester onFormSwich={toggleForm}/> ? <Verify onFormSwich={toggleForm}/> : ""
         }
